@@ -77,12 +77,11 @@ public class Hangman {
         scanner.nextLine();
 
         String randomWord = generateRandomWord();
-        System.out.println(randomWord);
+        // System.out.println(randomWord);
 
         String blanks = "_ ".repeat(randomWord.length());
         int incorrectGuessCount = 0;
 
-        // char[] guesses = new char[randomWord.length()];
         ArrayList<Character> incorrectGuesses = new ArrayList<Character>();
 
         while (incorrectGuessCount < 6) {
